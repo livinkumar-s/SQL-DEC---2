@@ -1,0 +1,82 @@
+Database
+-----------
+>> It is an organized collection of data that can be stored , retrieved, updated and managed efficiently.
+
+RDBMS---> Relational Database Management System, SQLdb
+-------------------------------------------------
+>> It stores data in form of tables(rows and columns).
+>> Needs SQL
+>> Ex: MySQL, PostgreSQL, Oracle.
+
+DBMS NoSQLDB
+------
+>>It stores data in form of objects or documents.
+>>Ex: MongoDB, MariaDB....
+
+MySQL 
+-------
+>>It is open-source RDBMS.
+>>Uses SQL 
+
+SQL --> Structured Query Language
+----
+SQL is a language to communicate with databases.
+
+DDL --> Data Definition Language -->CREATE, ALTER, DROP
+DML --> Data Manipulation Language --->UPDATE, INSERT, DELETE
+DQL --> Data Query Language --->SELECT 
+DCL --> Data Control Language.
+
+Database --> Tables ---> Data 
+(Schema)
+
+Syntax 
+----------
+>> It is case-insensitive. (a=A)
+SELECT * FROM tbname;
+select * from tbname;
+sElEcT * FroM tbname;
+>> a query should end with ';'
+
+Datatype
+---------
+Numerical datatypes
+---------------------
+INT ---> whole numbers 
+BIGINT --> large Integers 
+FLOAT --> Decimal 
+DOUBLE ---> Large Decimal
+
+String 
+-------
+CHAR(n) --> fixed length characters. Ex: CHAR(5) --> "hello", "priyanka", "I love", "love"
+VARCHAR(n) --> Variable length characters string. Ex: VARCHAR(5) --> "love","hi","world"
+TEXT ---> paragraph
+
+Boolean
+--------
+boolean --> 1/0 
+
+Date/Time 
+------------
+DATE --> "yyyy-mm-dd"
+TIME --> "HH:MM:SS"
+DATETIME --> Both
+
+
+Constraint
+------------
+PRIMARY KEY --> It won't allow duplicates, It will not allow empty field.(unique, not null). Identifies each record uniquely. only one primary key column for a table.
+
+
+Queries 
+------------
+To Create Database(Schema) ---> CREATE DATABASE dbname;
+To select db --> USE dbname;
+To Create Table --> CREATE TBALE tbname(
+    col1 datatype constraints,
+    col2 datatype constraints,
+    col2 datatype constraints
+);
+
+
