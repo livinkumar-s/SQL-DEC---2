@@ -64,9 +64,21 @@ TIME --> "HH:MM:SS"
 DATETIME --> Both
 
 
+Operators 
+------------
+= equal            
+<>,!= not equal
+< less                         
+> great 
+<= less or equal 
+>= great or equal
+
+
 Constraint
 ------------
 PRIMARY KEY --> It won't allow duplicates, It will not allow empty field.(unique, not null). Identifies each record uniquely. only one primary key column for a table.
+
+
 
 
 Queries 
@@ -79,4 +91,22 @@ To Create Table --> CREATE TBALE tbname(
     col2 datatype constraints
 );
 
+To insert new data to a table --> INSERT INTO tbname (col details) VALUES (),()...;
+To retrive data from a table --> SELECT (col details --> *) FROM tbname;
+To update data in a table ---> UPDATE tbname SET col=val, col=val...;
+To delete a record from table --> DELETE FROM Tbname;
 
+sql_safe_updates ---> you can update only one record in one go. the filteration must depend on PK.
+set sql_safe_updates=0;  -> to turn off.
+
+CRUD 
+--------
+Create ---> INSERT
+Read ---> SELECT
+Update ---> UPDATE
+Delete ---> DELETE
+
+WHERE
+------
+Filter the data.
+Ex: select, update, delete.... WHERE cond; 
