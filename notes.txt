@@ -73,6 +73,47 @@ Operators
 <= less or equal 
 >= great or equal
 
+Logical Operators 
+------------------
+AND 
+OR 
+NOT
+
+BETWEEN 
+----------
+a value ranges between 2 numbers.(inclusive range)
+Ex: ....WHERE col BETWEEN num1 and Num2;
+
+IN operator 
+-----------
+IN operator replaces multiple or.
+Ex: ... where col (not) IN (val1, val2, val3...);
+
+LIKE operator (Pattern matching)
+--------------------------------
+Patterns(wildcards) can be made using two characters. 
+
+% ---> will match 0 to inf char.
+_ ---> will match only one char.
+
+Ex: ... where col LIKE pattern;
+
+Starts with k ---> "k%"  --> "karthi","Kalyan", "kk", "k"
+Ends with n --> "%n"  --> "Neelakandan", "n"
+
+"___" --> "ram","bheen"
+
+SORTING
+--------
+arranging rows.
+ORDER BY --> ...... ORDER BY col asc,desc;
+
+LIMIT, OFFSET
+------
+to limit the result
+Ex: .... LIMIT num OFFSET num;
+
+
 
 Constraint
 ------------
