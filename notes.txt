@@ -113,13 +113,49 @@ LIMIT, OFFSET
 to limit the result
 Ex: .... LIMIT num OFFSET num;
 
-
-
 Constraint
 ------------
+>> Set of rules that manages data integrity in a column.
+
 PRIMARY KEY --> It won't allow duplicates, It will not allow empty field.(unique, not null). Identifies each record uniquely. only one primary key column for a table.
 
+UNIQUE ---> no duplicates
 
+NOT NULL ---> no empty cell
+
+DEFAULT ---> To automatically insert a value if none is provided
+
+AUTO_INCREMENT -->It increments numeric value row by row.(PRIMARY KEY)
+
+
+Functions (takes input ---> operation --> gives output)
+----------
+>> Predefined Operations.
+
+Numerical Function
+--------------------
+ROUND(dec) ---> rounds off a decimal number.
+FLOOR(dec) ---> rounds off to the smaller number
+CEIL(dec) --> rounds off to the next int.
+MOD(a,b)  --> reminder
+POWER(a,b)
+ABS(num) ---> absolute number
+
+String Functions 
+-----------------
+CONCAT(str1,str2.....) --> attaching all the strings 
+LENGTH(str) --> number of char
+UPPER(str)
+LOWER(str)
+REPLACE(str, old, new)---> replaces a substring
+SUBSTRING(str,start,len)  --> extracts substring from a string. Ex: "Hi Guys" --> "Guys"
+
+Date and Time 
+--------------
+CURTIME()
+CURDATE()
+NOW()
+DATEDIFF(d1,d2) --> fifference between 2 dates
 
 
 Queries 
@@ -151,3 +187,4 @@ WHERE
 ------
 Filter the data.
 Ex: select, update, delete.... WHERE cond; 
+
