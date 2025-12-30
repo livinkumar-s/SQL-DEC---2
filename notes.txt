@@ -191,26 +191,3 @@ WHERE
 Filter the data.
 Ex: select, update, delete.... WHERE cond; 
 
-
-
-cricketer
--------------
-
-id(pk)     name             email               c   active
--------------------------------------------------------
-1	        MSD         	ms@gmail.com	    16	1
-2	        Viart Kohli 	king@gmail.com	    84	1
-3	        Rohit sharma	hitman@gmail.com	50	1
-4	        ABD         	abd@gmail.com	    22	1
-6	        ruturaj     	rutu@gmail.com	    28	1
-7	        chris gayle 	boss@gmail.com	    42	0
-8	        viv richardsan	rich@gmail.com	    24	0
-
-
-jersey
----------
-
-id(pk)  jersey   playerId(fk---> cricketer(id))
---------------------------
-1       18       2
-2       7        1
