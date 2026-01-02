@@ -191,3 +191,78 @@ WHERE
 Filter the data.
 Ex: select, update, delete.... WHERE cond; 
 
+Joins
+-------
+>> It is used to combine rows from 2 or more tables based on related column.
+Ex: SELECT colDet FROM tb1 (join details) tb2 ON (related col);
+
+INNER JOIN 
+------------
+>> All matching records will be shown.
+Ex: select * from cricketer inner join jersey 
+on cricketer.id=jersey.playerId;
+
+LEFT join
+-----------
+>> ALL the records from left table.
+Ex: select * from cricketer left join jersey 
+on cricketer.id=jersey.playerId;
+
+RIGHT join
+-----------
+>> ALL the records from left table.
+Ex: select * from cricketer right join jersey 
+on cricketer.id=jersey.playerId;
+
+FULL OUTER JOIN 
+---------------
+>> Returns all the records from both table.
+Ex: left join  union  right join
+
+
+CROSS join 
+------------
+>> It matches every record from left table to every record from right table.
+Ex: SELECT * FROM tb1 CROSS JOIN tb2;
+
+no of rows tb1 * no of rows in tb2
+
+cricketer
+-------------
+
+1	MSD         	ms@gmail.com	    16	1
+2	Viart Kohli 	king@gmail.com	    84	1
+3	Rohit sharma   	hitman@gmail.com	50	1
+4	ABD         	abd@gmail.com	    22	1
+6	rutu          	rutu@gmail.com	    28	1
+7	chris gayle 	boss@gmail.com	    42	0
+8	viv richardsan	rich@gmail.com	    24	0
+
+jersey 
+----------
+1	18	2
+2	7	1
+3	45	3
+	    
+
+tb1
+-----     
+r1
+r2
+r3
+
+
+tb2
+-----
+r1
+r2
+
+result
+-----------
+r1r1
+r1r2
+r2r1
+r2r2
+r3r1
+r3r2
+
