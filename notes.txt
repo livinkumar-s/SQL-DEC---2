@@ -188,7 +188,7 @@ Delete ---> DELETE
 
 WHERE
 ------
-Filter the data.
+Filter the rows.
 Ex: select, update, delete.... WHERE cond; 
 
 Joins
@@ -227,42 +227,20 @@ Ex: SELECT * FROM tb1 CROSS JOIN tb2;
 
 no of rows tb1 * no of rows in tb2
 
-cricketer
--------------
+Aggregate Functions 
+--------------------
+Aggregate functions perform calculations on multiple rows and return single value.
 
-1	MSD         	ms@gmail.com	    16	1
-2	Viart Kohli 	king@gmail.com	    84	1
-3	Rohit sharma   	hitman@gmail.com	50	1
-4	ABD         	abd@gmail.com	    22	1
-6	rutu          	rutu@gmail.com	    28	1
-7	chris gayle 	boss@gmail.com	    42	0
-8	viv richardsan	rich@gmail.com	    24	0
+COUNT() ---> Number of rows.
+SUM() --> finds the sum of a numerical column.
+MAX() --> largest value in a Numerical col.
+MIN() --> smallest val;ue in a numerical col.
+AVG() --> finds average of a numberical column.
 
-jersey 
+Grouping 
 ----------
-1	18	2
-2	7	1
-3	45	3
-	    
+>> Groups rows with same value.
+Ex: select aggFun...... GROUP BY col;
 
-tb1
------     
-r1
-r2
-r3
-
-
-tb2
------
-r1
-r2
-
-result
------------
-r1r1
-r1r2
-r2r1
-r2r2
-r3r1
-r3r2
-
+WHERE ---> Rows 
+HAVING ---> Groups
