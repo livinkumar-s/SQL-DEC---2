@@ -244,3 +244,30 @@ Ex: select aggFun...... GROUP BY col;
 
 WHERE ---> Rows 
 HAVING ---> Groups
+
+Subqueries 
+------------
+>> It is a query written inside another query.
+Ex: main query.... (inner query);
+
+Types 
+--------
+Single Row Sub query 
+-----------------------
+>> Returns only one row and one column.
+
+Multi Row Subqueries
+---------------------
+>> It returns multiple rows.
+
+ALL ---> every single value must meet the condition
+ANY ---> any one value must meet the condition
+
+Co related Subquery
+-----------------------
+>> inner query depends on main query.
+Ex: SELECT * FROM students s WHERE mark > (
+    SELECT AVG(mark) FROM students where dept=s.dept
+);
+
+
