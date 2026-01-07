@@ -191,6 +191,25 @@ WHERE
 Filter the rows.
 Ex: select, update, delete.... WHERE cond; 
 
+Altering Table 
+-------------------
+>> it is used modify the structure of an existing table.
+Query ---> ALTER
+
+To Add a column ---> ALTER TABLE tbname ADD colName dtType constraints; 
+ALTER TABLE tbname ADD colName dtType constraints, ADD colName dtType constraints...;
+To add column with position ---> ALTER TABLE tbname ADD col detail (FIRST, AFTER col);
+To modify a column ---> ALTER TAABLE tbname MODIFY colName details;
+To Rename a column(rename and modifications) ---> ALTER TABLE tbname CHANGE colname newName datatype;
+To Drop a Column ---> ALTER TABLE tbname DROP COLUMN colname;
+To add constraint ---> ALTER TABLE tbname ADD constraint (col name);
+
+To rename table --> ALTER TABLE tbname RENAME TO newName;
+
+To Drop table ---> DROP TABLE tbname;
+To Drop database ---> DROP DATABASE dbname;
+
+
 Joins
 -------
 >> It is used to combine rows from 2 or more tables based on related column.
@@ -270,4 +289,7 @@ Ex: SELECT * FROM students s WHERE mark > (
     SELECT AVG(mark) FROM students where dept=s.dept
 );
 
-
+VIEW 
+------
+>> A view is a virtual table based on the result of a SELECT Query.
+CREATE VIEW viewName AS select.....;

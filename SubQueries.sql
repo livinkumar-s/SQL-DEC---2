@@ -41,3 +41,7 @@ mark > ALL (select mark from students where dept="ECE");
 SELECT * FROM students s WHERE mark > (
     SELECT AVG(mark) FROM students where dept=s.dept
 );
+
+
+select name, mark, (select avg(mark) from students
+where dept=s.dept) as averageMark from students s;
