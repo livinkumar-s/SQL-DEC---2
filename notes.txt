@@ -293,3 +293,11 @@ VIEW
 ------
 >> A view is a virtual table based on the result of a SELECT Query.
 CREATE VIEW viewName AS select.....;
+
+table (user) ----> name, email, phone, userId, password, noOfPosts
+
+AdminAccess ---> name, email, phone, userId, password, noOfPosts
+user --> name, email, noOfPosts
+
+
+securing data
